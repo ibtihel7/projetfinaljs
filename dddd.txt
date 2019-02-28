@@ -1,0 +1,3 @@
+<input type="text"  placeholder="date1" id="startdate">
+<input type="text" placeholder="date2" id="enddate">
+<input type="text" id="days">

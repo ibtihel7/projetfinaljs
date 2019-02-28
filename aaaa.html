@@ -1,0 +1,425 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+       
+<head>
+
+
+
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>hotel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+        <!-- our bootsrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="https://code.jquery.com/jquery-1.8.3.js"></script>
+        <script src="https://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" />
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    
+
+         <link rel="stylesheet" type="text/css" media="screen" href="mainl.css" />
+
+
+
+    <title>hotellocationvoiture</title>
+    
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   
+
+</head>
+
+
+<body>
+
+
+          <!-- bodyyyyyyy -->
+
+
+    <div class="container" >
+        <div class="row"> 
+
+            <div class="col-lg-2">
+                <ul>
+                    <li><label class="label-date"><i class="fa fa-calendar"></i>   Du</label></li>
+                    <li><input type="text" id="startdate" class="infoo" name="Arrivée" ></li>
+
+                    <!-- ?php echo date('Y-m-d -->
+                </ul>
+            </div>      
+        
+            <div class="col-lg-2">
+                <ul>
+                    <li><label class="label-date"><i class="fa fa-calendar"></i>   Au</label></li>
+                    <li> <input type="text" id="enddate" class="infoo" name="Départ"></li>
+
+            </ul>
+            </div>
+
+            <div class="col-lg-2">
+                    <ul>      
+                    <li><label class="nuité">Jours(s)</label></li>
+                    <li><input type="text" id="days" class="infooo" value=""  width="30%">
+                    </li>
+                    </ul>
+            </div>
+
+          
+                
+            <div class="col-lg-1">
+            
+                <ul>
+                    <li><label class="voiture">Voiture</label></li>
+                    <li><select id ="voi"class="info" onChange="prix()">
+                    <option value="blank"selected></option>
+                    <option id="bmw" value="1">BMW</option>
+                    <option id="mercedes" value="2">Mercedes</option>
+                    <option id="audi" value="3">Audi</option>
+                    <option id="audi" value="3">Porsh</option>
+                    <option id="audi" value="3">Peugeot</option>
+                    <option id="audi" value="3">Chevrolet</option>
+
+                    <option id="audi" value="3">Ferrari</option>
+                    <option id="audi" value="3">Jaguar</option>
+                    <option id="audi" value="3">lamborghini</option>
+
+
+                    
+                    </select></li>
+                </ul>    
+            </div>
+
+          
+            <div class="col-lg-3">
+                    <ul>      
+                    <li><label class="nuité">Montant</label></li>
+                    <li><input type="input" id="days" class="infooo" value=""  width="30%">
+                    <!-- <li><button type="submit" class="btn btn-primary" id="payer" href= "#payer">Payer</button></li> -->
+
+                    </ul>
+            </div>
+
+            <div class="col-lg-1">
+                 
+                    <!-- <a class="navbar-brand" href="#projets"><span><h6>Projets</h6></span></a> -->
+
+                <a  style="margin-top:25%;" href="#paye" class="btn btn-primary">Payer</a>
+                <!-- <input type="button" class="btn btn-primary" id="payer" href= "#paye" value="Payer"></input> -->
+                    
+            </div> 
+        </div>     
+    </div>     
+
+
+  
+
+    <br> 
+ 
+    <!-- <div data-aos="fade-right"> -->
+
+    <center><div class="title"><h1>Trouvez chez nous la meilleure location de voiture</h1> </div>
+        <br> 
+   <div><img src="https://media0.giphy.com/media/rfyhcSaiRsaha/giphy.gif?cid=3640f6095c61405e30786b6c41d8339a"></div>
+   <br>   
+<div>
+    <audio controls id="audio">
+        <source src="hype_home.ogg">
+        <source src="voiture.mp3">
+    </audio>
+</div></center>
+
+<!-- </div> -->
+    
+   <br>
+   
+   <div data-aos="fade-right">
+ 
+   <div class="title"><center><h1>Notre Catalogue</h1> </center></div>
+   <br>
+<div class="container" id="catalogue"><center>
+    
+    <br> <br>        
+            <div class="row">
+
+                <div class = "col-md-4 col-sm-12 ">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="http://www.car-revs-daily.com/wp-content/uploads/2014/11/AC-Schnitzer-BMW-X4-gif.gif">
+                        <div class="card-body">
+                        <h5 class="card-title">BMW</h5>
+                        <a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="btn btn-primary">Plus d'info</a>
+                    </div> </div>
+                </div>
+       	
+
+                <div class = "col-md-4 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://thumbs.gfycat.com/CloseReflectingCoyote-size_restricted.gif">
+                            <div class="card-body">
+                                <h5 class="card-title">Mercedes</h5>
+                                <a href="https://www.mercedes-benz.com/fr/" class="btn btn-primary">Plus d'info</a>
+                            </div>
+                    </div>
+                </div>				
+                            
+                <div class = "col-md-4 col-sm-12 ">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://i.redd.it/pgwqxcefgin01.gif">
+                        <div class="card-body">
+                            <h5 class="card-title">Audi</h5>
+                            <a href="https://www.audi.fr/fr/web/fr.html" class="btn btn-primary">Plus d'info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class = "col-md-4 col-sm-12 ">
+                        <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="https://thumbs.gfycat.com/AntiqueRectangularGallinule-small.gif">
+                                <div class="card-body">
+                                <h5 class="card-title">Porsh</h5>
+                                <a href="https://www.porsche.com/" class="btn btn-primary">Plus d'info</a>
+                                </div>
+                        </div>
+                </div>	
+
+                <div class = "col-md-4 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="http://www.car-revs-daily.com/wp-content/uploads/508-header-gif12.gif">
+                            <div class="card-body">
+                                <h5 class="card-title">Peugeot</h5>
+                                <a href="https://www.peugeot.fr/accueil.html" class="btn btn-primary">Plus d'info</a>
+                            </div>
+                    </div>
+                </div>				
+                            
+                <div class = "col-md-4 col-sm-12 ">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="http://www.car-revs-daily.com/wp-content/uploads/2014/11/colorado-motocross-gif.gif">
+                        <div class="card-body">
+                            <h5 class="card-title">Chevrolet</h5>
+                            <a href="https://www.chevrolet.com/" class="btn btn-primary">Plus d'info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<br>
+
+<div class="row">
+
+        <div class = "col-md-4 col-sm-12 ">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="https://media0.giphy.com/media/gqKKvqeBVXzZm/giphy.gif" height=145rem;>
+                <div class="card-body">
+                <h5 class="card-title">Ferrari</h5>
+                <a href="https://www.ferrari.com/fr-CH" class="btn btn-primary">Plus d'info</a>
+            </div> </div>
+        </div>
+   
+
+        <div class = "col-md-4 col-sm-12">
+            <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="http://www.car-revs-daily.com/wp-content/uploads/Jaguar-XF-by-2M-Designs-GIF-header1.gif" height=145rem>
+                    <div class="card-body">
+                        <h5 class="card-title">Jaguar</h5>
+                        <a href="https://www.jaguar-me.com/fr/index.html" class="btn btn-primary">Plus d'info</a>
+                    </div>
+            </div>
+        </div>				
+                    
+        <div class = "col-md-4 col-sm-12 ">
+            <div class="card" style="width: 18rem; ">
+                <img class="card-img-top" src="https://i.gifer.com/7UuW.gif">
+                <div class="card-body">
+                    <h5 class="card-title"> lamborghini </h5>
+                    <a href="https://www.lamborghini.com/fr-en" class="btn btn-primary">Plus d'info</a>
+                </div>
+            </div>
+        </div>
+    </div></center>
+    <br> <br> 
+</div>
+
+
+</div>
+<br>
+<br>
+
+<div data-aos="fade-right">
+
+
+<div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-6">
+                <center><h1 class="title">Location & Contact</h1></center>
+<div class="container"  id="formm">
+
+   
+
+           <form onsubmit="validateForm()"> 
+
+                <form method="post" name="myemailform" id="form" action=""> 
+
+
+              <div class="form-group row">
+                        <ul>
+                            <li><label>Nom</label></li>
+                            <li><input type="text" id="name" class="info" name="name" placeholder="" onclick=""></li>
+                        </ul>
+                </div> 
+                <div class="form-group row">        
+                        <ul>
+                            <li><label>Age</label></li>
+                            <li><input type="text" id="age" class="info" name="age"></li>
+                        </ul>
+                </div>
+
+                <div class="form-group row">
+                   
+                        <ul>
+                            <li><label>Email</label></li>
+                            <li><input type="text" id="email" class="info" name="email"></li>  
+                        </ul> 
+                   
+                </div>  
+
+
+                <div class="form-group row">  
+                   
+                        <ul>
+                            <li><label>Phone</label></li>
+                            <li><input type="tel" id="phone" class="info" name="phone"></li>
+                        </ul>
+                   
+                </div>
+
+                <div class="form-group row">
+                        <ul>
+                            <li><label>Adresse</label></li>
+                            <li><input type="text" id="street" class="info" name="street"></li>
+                        </ul>
+                </div>
+                
+
+                <div class="form-group row">
+                    
+                        <ul>
+                            <li><label>Code postal</label></li>
+                            <li><input type="text" id="post-code" class="info" name="post-code"></li>
+                        </ul>
+                   
+                </div>
+
+                <div class="form-group row">
+                
+                        <ul>
+                            <li><label>Pays</label></li>
+                            <li><input type="text" id="country" class="info" name="country"></li>
+                        </ul>
+                </div>
+                <br>  <br>  
+           
+
+
+                <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-2"><input type='button' type ='submit'class="btn btn-primary" id="send" value='Envoyer' onclick="validateForm()" href="#payer"></div> 
+                        <div class="col-lg-2"><button type="reset" class="btn btn-primary" id="Reset" onclick="myResetFunction()">Annuler</button></div>    
+                 </div>
+
+                
+<br>
+            </form>
+        </div>
+
+
+      
+     
+                
+    </div> 
+
+                <!-- <img src="https://www.tout-pour-ton-mobile.com/wp-content/uploads/2015/07/beach-1.gif" width="80%"></img> -->
+            
+
+                <div class="col-lg-3">
+           
+
+
+                        <div class="payement">
+                
+                    
+                                <div class="">
+                                    
+                                        <a  > <img src="card.png" id="paye" width=50%></a>
+                
+                                  
+                                </div>
+                                <div class="">
+                                        <label class="password">Password</label>
+                                        <input type="password" class="form-controll" id="inputPassword4"  ondblclick="checkPass()" placeholder="">
+                                </div>  
+                        </div>
+                    </div>
+                
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-1.8.3.js"></script>
+<script src="https://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" />
+<script>
+$(document).ready(function() {
+
+$( "#startdate,#enddate" ).datepicker({
+changeMonth: true,
+changeYear: true,
+firstDay: 1,
+dateFormat: 'dd/mm/yy',
+})
+
+$( "#startdate" ).datepicker({ dateFormat: 'dd-mm-yy' });
+$( "#enddate" ).datepicker({ dateFormat: 'dd-mm-yy' });
+
+$('#enddate').change(function() {
+var start = $('#startdate').datepicker('getDate');
+var end   = $('#enddate').datepicker('getDate');
+
+if (start<end) {
+var days   = (end - start)/1000/60/60/24;
+$('#days').val(days);
+}
+else {
+alert ("You cant come back before you have been!");
+$('#startdate').val("");
+$('#enddate').val("");
+$('#days').val("");
+}
+}); //end change function
+}); //end ready
+</script>
+
+
+<br> 
+<br>
+<br>
+<br>
+
+
+<script src="main.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    
+        
+</body>
+
+</html>
